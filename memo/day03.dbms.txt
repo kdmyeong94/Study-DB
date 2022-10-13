@@ -1,0 +1,56 @@
+
+ 1. JOIN(조인)
+  1-1. join 이란
+	- 두 개 이상의 테이블을 서로 연결하여 데이터를 검색 할 때 사용하는 방법으로 두 개의 테이블을 마치 하나의 테이블인 것 처럼 보여주는 것이다.
+
+  1-2. join의 기본 사용 방법
+	- 두 개의 테이블에 하나라도 같은 컬럼이 있어야 한다.
+	- 두 컬럼 값은 공유 되어야 한다.
+	- 보통 조인을 위해서 기본키 (Primary Key)와 외래키 (Foreign Key)를 활용한다.
+
+  1-3. inner join
+	- 각 테이블에서 조인 조건에 일치되는 데이터만 가져온다.
+	- inner join은 '교집합'이라고 말한다.
+
+  1-4. outer join
+	- 조인 조건에 일치하는 데이터 및 일치하지 않는 데이터를 모두 select한다.
+	- 조인 조건에 일치하는 데이터가 없다면 NULL로 가지고 온다.
+	- outer join은 inner join과는 다르게 주(MAIN) 테이블이 어떤 테이블인지가 중요하다. 그래서 어떤 테이블이 중심이 되느냐에 따라서 다시 left outer join, right outer join, full outer join으로 세분 할 수 있다.
+	- left outer join : 왼쪽 테이블이 중심
+	- right outer join : 오른쪽 테이블이 중심
+	- full outer join : 양쪽 테이블 모두가 중심
+
+ 2. left outer join
+
+	select  *
+	from   table A left outer join table B
+	-> 왼쪽 table A가 기준이 된다.
+	-> 조인 조건에 부합하는 데이터가 조인 당하는 테이블(오른쪽)에 있으면 해당 데이터를 가지고 오고, 부재하면 NULL로 select 된다.
+ 
+ 3. right outer join
+
+	select  *
+	from   table A right outer join table B
+
+	-> 오른쪽 테이블이 기준이 된다.
+	-> 조인 조건에 부합하는 데이터가 조인 당하는 테이블(왼쪽)에 있으면 해당 데이터를 가지고 오고, 부재하면 NULL로 select 된다.
+
+ 4. full outer join
+
+	select  *
+	from   table A full outer join table B
+
+	-> 양쪽 테이블 모두가 기준이 된다.
+	-> 조건에 부합하는 데이터가 조인당하는 테이블에 있으면 해당데이터를, 부재하면 NULL로 select된다.
+
+ 5. ANSI join VS ORACLE join
+	- SQL은 데이터베이스를 관리하기 위해 만들어진 프로그래밍 언어이며, 데이터베이스를 관리해주는 대부분의 DBMS들은 SQL 사용한다. 물론, DBMS자체의 특수성 때문에 SQL 의 사용법이 조금씩 다르기도 하지만, 큰 틀에서는 나름대로의 보편성을 가지고 있다.
+	- 이를 위해 미국 국립 표준 협회(ANSI)에서도 SQL에 대한 보편적인 문법을 제시하고 있는데, 그것이 바로 ANSI Query이다.
+
+
+ 6. 서브쿼리(subQuery)란?
+	- MainQuery에 반대되는 개념으로 이름을 붙인 것
+	- 메인쿼리를 구성하는 소단위 쿼리
+	- select, insert, delete, update 절에서 모두 사용 가능
+	- 서브쿼리의 결과 집합을 메인 쿼리가 중간 결과값으로 사용
+	- 서브쿼리 자체는 일반 쿼리와는 다를바가 없다.
