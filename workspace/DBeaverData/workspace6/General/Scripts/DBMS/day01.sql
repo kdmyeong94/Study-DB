@@ -1,0 +1,250 @@
+-- 주석 SELECT 문
+
+/*
+ * 여러줄 주석
+ * 
+ */
+
+--SELECT  * 
+--FROM EMPLOYEES e ;
+--
+--SELECT employee_id, last_name
+--FROM EMPLOYEES e ;
+--
+--SELECT	EMPLOYEE_ID , LAST_NAME 
+--FROM 	EMPLOYEES e 
+--where 	job_id = 'SA_REP'
+--;
+
+/*	1. EMPLOYEES 테입이블에서
+ *	EMPLOYEE_ID , LAST_NAME , SALARY 조회
+ *  LAST_NAME = Smith
+ */	
+--SELECT 	EMPLOYEE_ID ,LAST_NAME ,SALARY 
+--FROM 	EMPLOYEES e 
+--WHERE 	LAST_NAME = 'Smith'
+--;
+/*
+ *  2. employees 테이블에서 first_name이 Guy인 사람의
+ *  employee_id, first_name, last_name, job_id 조회
+ */
+
+SELECT 	EMPLOYEE_ID ,FIRST_NAME ,LAST_NAME ,JOB_ID
+FROM  	EMPLOYEES e 
+WHERE 	FIRST_NAME = 'Guy' 	
+;
+
+
+SELECT 	*
+FROM 	EMPLOYEES e 
+WHERE 	JOB_ID  = 'SA_REP'
+AND 	MANAGER_ID = 145
+;
+
+/*
+ * 1. emplyoees 테이블에서 department_id가 100이고
+ * job+id가 FI_MGR인 사람 조회
+ */
+SELECT 	*
+FROM 	EMPLOYEES e 
+WHERE 	DEPARTMENT_ID = 100
+AND  	JOB_ID = 'FI_MGR'
+;
+
+
+/* 2. emplyoees 테이블에서 department_id가 50이고 manager_id가 121인 사람의
+ * employee_id, first_name, last_name, job_id 조회
+ * 
+ */
+
+SELECT 	EMPLOYEE_ID ,
+		FIRST_NAME ,
+		LAST_NAME ,
+		JOB_ID 
+FROM 	EMPLOYEES e 
+WHERE 	DEPARTMENT_ID =50
+AND 	MANAGER_ID 	= 121
+;
+
+
+SELECT 	EMPLOYEE_ID AS "ID" ,
+		SALARY AS "SAL"
+FROM 	EMPLOYEES e 
+;
+
+
+
+SELECT 	EMPLOYEE_ID "ID" ,
+		SALARY "SAL"
+FROM 	EMPLOYEES e 
+;
+
+
+
+-- distinct : 중복제거
+SELECT 	DISTINCT  DEPARTMENT_ID 
+FROM 	EMPLOYEES e 
+;
+
+
+-- OR 
+
+SELECT 	*
+FROM 	EMPLOYEES e 
+WHERE 	DEPARTMENT_ID =50
+OR		MANAGER_ID = 100
+;
+
+
+
+-- NOT , <> , !=
+SELECT 	*
+FROM 	EMPLOYEES e 
+WHERE  	NOT (DEPARTMENT_ID = 50)
+;
+
+SELECT 	*
+FROM 	EMPLOYEES e 
+WHERE  	DEPARTMENT_ID <> 50
+;
+
+SELECT 	*
+FROM 	EMPLOYEES e 
+WHERE  	DEPARTMENT_ID != 50
+;
+
+
+-- SALARY 4000 이상 ~ 8000 이하
+SELECT 	*
+FROM 	EMPLOYEES e 
+WHERE  	SALARY >= 4000
+AND 	SALARY <= 8000
+;
+
+
+-- BETWEEN A AND B
+SELECT 	*
+FROM 	EMPLOYEES e 
+WHERE  	SALARY BETWEEN 4000 AND 8000
+;
+
+
+-- IN() , OR 와 동일
+SELECT 	*
+FROM 	EMPLOYEES e 
+WHERE 	SALARY = 6500
+OR		SALARY = 7700
+OR		SALARY = 13000
+;
+
+SELECT 	*
+FROM 	EMPLOYEES e 
+WHERE 	SALARY IN(6500, 7700, 13000)
+;
+
+
+-- LIKE  :  D 로시작하는 사람
+SELECT 	FIRST_NAME ,
+		LAST_NAME 
+FROM 	EMPLOYEES e 
+WHERE 	FIRST_NAME LIKE 'D%'
+;
+
+-- 'd' 로 끝나는 사람
+SELECT  FIRST_NAME ,
+		LAST_NAME 
+FROM 	EMPLOYEES e 
+WHERE 	FIRST_NAME LIKE '%d'
+;
+-- _ _ a 인 사람
+SELECT  FIRST_NAME ,
+		LAST_NAME 
+FROM 	EMPLOYEES e 
+WHERE 	FIRST_NAME LIKE '__a%' 
+;
+
+
+-- NULL 조회
+SELECT 	*
+FROM 	EMPLOYEES e 
+WHERE 	COMMISSION_PCT IS NULL
+;
+
+-- NOT NULL 조회
+SELECT 	*
+FROM 	EMPLOYEES e 
+WHERE 	COMMISSION_PCT IS NOT NULL 
+;
+
+-- ORDER BY ASC : 오름차순
+-- ASC는 생략가능 (오름차순을 기본값으로 가짐)
+SELECT 	*
+FROM 	EMPLOYEES e 
+ORDER BY SALARY ASC 
+;
+
+-- ORDER BY DESC : 오름차순
+SELECT 	*
+FROM 	EMPLOYEES e 
+ORDER BY SALARY DESC 
+;
+
+
+-- SUM()
+SELECT 	SUM(SALARY)
+FROM	EMPLOYEES e 
+;
+
+-- COUNT( 컬럼 / * )
+SELECT 	COUNT(*)
+FROM	EMPLOYEES e 
+;
+
+SELECT 	COUNT(EMPLOYEE_ID) "cnt"
+FROM	EMPLOYEES e 
+;
+
+
+/*
+ * first_name을 기준으로 count,
+ * 중복을 제거한 first_name을 count
+ */
+
+SELECT  COUNT(FIRST_NAME)
+FROM 	EMPLOYEES e 
+;
+
+SELECT  COUNT(DISTINCT FIRST_NAME)
+FROM 	EMPLOYEES e 
+;
+
+
+-- 평균 (AVG)
+SELECT 	AVG(SALARY) 
+FROM	EMPLOYEES e 
+;
+
+SELECT  AVG(SALARY)
+FROM 	EMPLOYEES e 
+WHERE  	DEPARTMENT_ID =80
+;
+
+-- MAX : 최대값
+SELECT 	MAX(SALARY)
+FROM 	EMPLOYEES e 
+;
+
+SELECT 	MAX(HIRE_DATE)
+FROM 	EMPLOYEES e 
+;
+
+-- MIN : 최소값
+SELECT 	MIN(SALARY)
+FROM 	EMPLOYEES e 
+;
+
+SELECT 	MIN(HIRE_DATE)
+FROM 	EMPLOYEES e 
+;
+
+
