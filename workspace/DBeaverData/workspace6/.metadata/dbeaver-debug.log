@@ -1,24 +1,24 @@
-2022-10-13 15:47:06.817 - DBeaver 22.1.5.202208211008 is starting
-2022-10-13 15:47:06.818 - OS: Windows 10 10.0 (amd64)
-2022-10-13 15:47:06.818 - Java version: 11.0.12 by Eclipse Foundation (64bit)
-2022-10-13 15:47:06.818 - Install path: 'E:\0803_gb_kdm\util\dbeaver'
-2022-10-13 15:47:06.818 - Instance path: 'file:/C:/Users/user/AppData/Roaming/DBeaverData/workspace6/'
-2022-10-13 15:47:06.819 - Memory available 64Mb/1024Mb
+2022-10-14 22:57:57.759 - DBeaver 22.1.5.202208211008 is starting
+2022-10-14 22:57:57.760 - OS: Windows 10 10.0 (amd64)
+2022-10-14 22:57:57.760 - Java version: 11.0.12 by Eclipse Foundation (64bit)
+2022-10-14 22:57:57.760 - Install path: 'E:\0803_gb_kdm\util\dbeaver'
+2022-10-14 22:57:57.762 - Instance path: 'file:/C:/Users/user/AppData/Roaming/DBeaverData/workspace6/'
+2022-10-14 22:57:57.762 - Memory available 64Mb/1024Mb
 > Start Core File Systems [org.eclipse.core.filesystem 1.9.400.v20220419-0658]
 > Start Core Resource Management [org.eclipse.core.resources 3.17.0.v20220517-0751]
-2022-10-13 15:47:07.036 - Initializing DBeaver 22.1.5
-2022-10-13 15:47:07.037 - Host plugin: org.jkiss.dbeaver.ui.app.standalone 22.1.5.202208211008
-2022-10-13 15:47:07.037 - Initialize desktop platform...
 > Start 팀 지원 핵심 [org.eclipse.team.core 3.9.400.v20220511-1440]
-2022-10-13 15:47:07.391 - BounceCastle bundle found. Use JCE provider BC
-2022-10-13 15:47:07.531 - Initialize base platform...
+2022-10-14 22:57:57.909 - Initializing DBeaver 22.1.5
+2022-10-14 22:57:57.910 - Host plugin: org.jkiss.dbeaver.ui.app.standalone 22.1.5.202208211008
+2022-10-14 22:57:57.910 - Initialize desktop platform...
+2022-10-14 22:57:58.033 - BounceCastle bundle found. Use JCE provider BC
+2022-10-14 22:57:58.087 - Initialize base platform...
 > Start DBeaver UI Navigator [org.jkiss.dbeaver.ui.navigator 1.0.88.202208211008]
 > Start Expression Language [org.eclipse.core.expressions 3.8.100.v20210910-0640]
-2022-10-13 15:47:07.593 - Platform initialized (556ms)
-2022-10-13 15:47:07.593 - Create display
+2022-10-14 22:57:58.104 - Platform initialized (194ms)
+2022-10-14 22:57:58.104 - Create display
 > Start DBeaver UI Editors - Base [org.jkiss.dbeaver.ui.editors.base 1.0.88.202208211008]
-2022-10-13 15:47:07.791 - Starting RMI server at 48278
-2022-10-13 15:47:08.075 - Run workbench
+2022-10-14 22:57:58.203 - Starting RMI server at 57747
+2022-10-14 22:57:58.431 - Run workbench
 > Start Eclipse e4 작업영역 SWT [org.eclipse.e4.ui.workbench.swt 0.16.500.v20220506-1520]
 > Start Eclipse Application Services [org.eclipse.e4.core.services 2.3.200.v20220513-1235]
 > Start Eclipse UI Application Services [org.eclipse.e4.ui.services 1.5.0.v20210115-1333]
@@ -32,14 +32,14 @@
 > Start DBeaver UI [org.jkiss.dbeaver.ui 5.1.103.202208211008]
 > Start Java Native Access [com.sun.jna 5.8.0.v20210503-0343]
 Warning: NLS unused message: BlockedJobsDialog_UserInterfaceTreeElement in: org.eclipse.ui.internal.progress.messages
-2022-10-13 15:47:09.929 - Configure workbench window
+2022-10-14 22:57:59.683 - Configure workbench window
 > Start 도움말 시스템 코어 [org.eclipse.help 3.9.100.v20210721-0601]
-2022-10-13 15:47:10.029 - Create actions
-2022-10-13 15:47:10.034 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
-2022-10-13 15:47:10.034 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
-2022-10-13 15:47:10.035 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
-2022-10-13 15:47:10.587 - Initialize workbench window
-2022-10-13 15:47:10.593 - Finish initialization
+2022-10-14 22:57:59.773 - Create actions
+2022-10-14 22:57:59.777 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2022-10-14 22:57:59.778 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2022-10-14 22:57:59.778 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2022-10-14 22:58:00.168 - Initialize workbench window
+2022-10-14 22:58:00.174 - Finish initialization
 > Start 기본 문서 편집기 [org.eclipse.ui.editors 3.14.300.v20210913-0815]
 > Start 텍스트 편집기 프레임워크 [org.eclipse.ui.workbench.texteditor 3.16.500.v20220331-0848]
 > Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.88.202208211008]
@@ -50,69 +50,21 @@ Warning: NLS unused message: actions_navigator__objects in: org.jkiss.dbeaver.ui
 > Start Equinox Java Authentication and Authorization Service (JAAS) [org.eclipse.equinox.security 1.3.900.v20220108-1321]
 > Start 인터넷 연결 관리 사용자 인터페이스 [org.eclipse.ui.net 1.4.0.v20210426-0838]
 > Start Internet Connection Management [org.eclipse.core.net 1.3.1200.v20220312-1450]
-2022-10-13 15:47:12.534 - Loading user drivers configuration from 'C:\Users\user\AppData\Roaming\DBeaverData\workspace6\.metadata\.plugins\org.jkiss.dbeaver.core\drivers.xml'
-2022-10-13 15:47:12.543 - Total database drivers: 100 (100)
+2022-10-14 22:58:02.035 - Loading user drivers configuration from 'C:\Users\user\AppData\Roaming\DBeaverData\workspace6\.metadata\.plugins\org.jkiss.dbeaver.core\drivers.xml'
+2022-10-14 22:58:02.046 - Total database drivers: 100 (100)
 > Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.125.202208211008]
 > Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.94.202208211008]
 > Start Draw2d [org.eclipse.draw2dl 3.12.100.20220815134646]
 > Start GEF3 GEF (MVC) [org.eclipse.gef3 3.12.100.20220815134646]
 > Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.48.202208211008]
 > Start DBeaver ERD Model [org.jkiss.dbeaver.erd.model 1.0.48.202208211008]
+> Start DBeaver Oracle Support [org.jkiss.dbeaver.ext.oracle 2.1.173.202208211008]
 > Start 콘솔 [org.eclipse.ui.console 3.11.200.v20220324-0630]
 Warning: NLS unused message: InputStreamMonitor_label in: org.eclipse.debug.internal.core.DebugCoreMessages
 Warning: NLS unused message: OutputStreamMonitor_label in: org.eclipse.debug.internal.core.DebugCoreMessages
 > Start 디버그 핵심 [org.eclipse.debug.core 3.19.100.v20220324-0630]
-2022-10-13 15:47:13.659 - Connect with 'hr' (oracle_thin-182d8013065-64de16a843a8dd6a)
-> Start DBeaver Oracle Support [org.jkiss.dbeaver.ext.oracle 2.1.173.202208211008]
-2022-10-13 15:47:13.706 - Execution context opened (hr; Main; 0)
-2022-10-13 15:47:14.885 - Execution context opened (hr; Metadata; 1)
-2022-10-13 15:47:15.313 - Open [https://dbeaver.io/product/version.xml]
-2022-10-13 15:47:15.680 - Connected (oracle_thin-182d8013065-64de16a843a8dd6a, Oracle JDBC driver [12.2.0.1.0])
-2022-10-13 15:47:15.832 - Execution context opened (hr; SQLEditor <test.sql>; 2)
-> Start DBeaver UI Editors - Connections [org.jkiss.dbeaver.ui.editors.connection 1.0.79.202208211008]
-2022-10-13 15:48:54.773 - Error reading statistics of 'hr'
-org.jkiss.dbeaver.DBException: Can't read tablespace statistics
-	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.collectObjectStatistics(OracleDataSource.java:808)
-	at org.jkiss.dbeaver.ui.navigator.itemlist.ItemListControl$ItemLoadService.evaluate(ItemListControl.java:321)
-	at org.jkiss.dbeaver.ui.navigator.itemlist.ItemListControl$ItemLoadService.evaluate(ItemListControl.java:1)
-	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:88)
-	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:72)
-	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
-
-	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494)
-	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446)
-	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054)
-	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623)
-	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252)
-	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612)
-	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:213)
-	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:37)
-	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:733)
-	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904)
-	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082)
-	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1276)
-	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:366)
-	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeQuery(JDBCStatementImpl.java:345)
-	at org.jkiss.dbeaver.ext.oracle.model.OracleDataSource.collectObjectStatistics(OracleDataSource.java:789)
-	... 6 more
-Caused by: Error : 942, Position : 245, Sql = SELECT
-	TS.TABLESPACE_NAME, F.AVAILABLE_SPACE, S.USED_SPACE
-FROM
-	SYS.DBA_TABLESPACES TS,
-	(SELECT TABLESPACE_NAME, SUM(BYTES) AVAILABLE_SPACE FROM DBA_DATA_FILES GROUP BY TABLESPACE_NAME) F,
-	(SELECT TABLESPACE_NAME, SUM(BYTES) USED_SPACE FROM DBA_SEGMENTS GROUP BY TABLESPACE_NAME) S
-WHERE
-	F.TABLESPACE_NAME(+) = TS.TABLESPACE_NAME AND S.TABLESPACE_NAME(+) = TS.TABLESPACE_NAME, OriginalSql = SELECT
-	TS.TABLESPACE_NAME, F.AVAILABLE_SPACE, S.USED_SPACE
-FROM
-	SYS.DBA_TABLESPACES TS,
-	(SELECT TABLESPACE_NAME, SUM(BYTES) AVAILABLE_SPACE FROM DBA_DATA_FILES GROUP BY TABLESPACE_NAME) F,
-	(SELECT TABLESPACE_NAME, SUM(BYTES) USED_SPACE FROM DBA_SEGMENTS GROUP BY TABLESPACE_NAME) S
-WHERE
-	F.TABLESPACE_NAME(+) = TS.TABLESPACE_NAME AND S.TABLESPACE_NAME(+) = TS.TABLESPACE_NAME, Error Msg = ORA-00942: table or view does not exist
-
-	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498)
-	... 20 more
-> Start DBeaver Oracle UI [org.jkiss.dbeaver.ext.oracle.ui 1.0.75.202208211008]
+2022-10-14 22:58:03.294 - Connect with 'jsp' (oracle_thin-183d4573f40-16462f71d82dc9ca)
+2022-10-14 22:58:03.326 - Execution context opened (jsp; Main; 0)
+2022-10-14 22:58:04.086 - Execution context opened (jsp; Metadata; 1)
+2022-10-14 22:58:04.162 - Connected (oracle_thin-183d4573f40-16462f71d82dc9ca, Oracle JDBC driver [12.2.0.1.0])
+2022-10-14 22:58:04.291 - Execution context opened (jsp; SQLEditor <day06.sql>; 2)

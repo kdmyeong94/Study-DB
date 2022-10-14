@@ -15,6 +15,9 @@
 		<column name="Origin" visible="true" order="2" width="100"/>
 		<column name="드라이버 유형" visible="true" order="3" width="100"/>
 	</item>
+	<item id="NodeList/OracleSchema">
+		<column name="Name" visible="true" order="0" width="131"/>
+	</item>
 	<item id="NodeList/OracleTable">
 		<column name="Name" visible="true" order="0" width="108"/>
 		<column name="Stat Row Count" visible="true" order="1" width="100"/>
